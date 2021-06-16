@@ -72,3 +72,23 @@ Nous devons aussi créer nos entités `Partie` et `Joueur`.
 
 ## Exécuté votre code
 
+### Pour executer les testes:
+Ouvrez le projet avec un IDE comme eclipse.
+* Pour eclispe:
+    - Click droit sur le projet > Run As > JUnit Test
+* Sans IDE sous windows
+    - dans un terminal:
+    ```shell
+    mvnw test
+    ```
+* Sans IDE sous Linux
+    - dans un terminal:
+    ```shell
+    mvn test
+    ```
+### Pour le caverage sous Eclipse:
+Il faut ajouter le plugin de coverage EclEmma:
+Dans Eclipse: Help > Eclipse Market puis dans la bar de recherche tapez: "EclEmma" et installer le plugin EclEmma Coverage.
+
+Pour lancer le coverage: click droit sur le projet
+Coverage As > JUnit Test.
