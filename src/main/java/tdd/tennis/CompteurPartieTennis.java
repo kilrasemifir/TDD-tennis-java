@@ -33,8 +33,13 @@ public class CompteurPartieTennis {
      */
     public PartieDeTennis joueurGagne(PartieDeTennis partie, JoueurDeTennis gagnant) {
         ScoreTennis scoreDuGagnant = trouverScoreGagnant(partie, gagnant);
-        managePoint(scoreDuGagnant);
+        ScoreTennis scoreDuPerdant = getScoreDuPerdant(partie, scoreDuGagnant);
+        managePoint(scoreDuGagnant, scoreDuPerdant);
         return partie;
+    }
+
+    private ScoreTennis getScoreDuPerdant(PartieDeTennis partie, ScoreTennis scoreDuGagnant) {
+        return scoreDuGagnant == partie.getScoreJoueur1() ? partie.getScoreJoueur2() : partie.getScoreJoueur1();
     }
 
     private ScoreTennis trouverScoreGagnant(PartieDeTennis partie, JoueurDeTennis gagnant) {
@@ -46,13 +51,24 @@ public class CompteurPartieTennis {
         return scoreDuGagnant;
     }
 
-    private void managePoint(ScoreTennis scoreDuGagnant) {
+    private void managePoint(ScoreTennis scoreDuGagnant, ScoreTennis scoreDuPerdant) {
         if(scoreDuGagnant.getPoint()==0){
             scoreDuGagnant.setPoint(15);
         }else if(scoreDuGagnant.getPoint()==15){
             scoreDuGagnant.setPoint(30);
-        } else {
+        } else if(scoreDuGagnant.getPoint()==30) {
             scoreDuGagnant.setPoint(40);
+        } else {
+            gestionAvantage(scoreDuGagnant, scoreDuPerdant);
         }
+    }
+
+    private void gestionAvantage(ScoreTennis scoreDuGagnant, ScoreTennis scoreDuPerdant) {
+        if(scoreDuPerdant.isAvantage())
+            scoreDuPerdant.setAvantage(false);
+        else if(scoreDuGagnant.isAvantage())
+            scoreDuGagnant.setJeux(scoreDuGagnant.getJeux()+1);
+        else
+            scoreDuGagnant.setAvantage(true);
     }
 }

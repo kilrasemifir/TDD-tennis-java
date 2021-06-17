@@ -48,6 +48,37 @@ class CompteurPartieTennisPointsTest {
         assertEquals(40, partie.getScoreJoueur2().getPoint());
     }
 
+    @Test
+    @DisplayName("Quand un gagnant a 40 points, et son oposant aussi alors il gagne un avantage")
+    public void testGagneUnPointNouveauAvantage(){
+        partie.getScoreJoueur1().setScore(40, 0, 0, 0);
+        partie.getScoreJoueur2().setScore(40, 0, 0, 0);
+        compteur.joueurGagne(partie, joueur1);
+        assertTrue(partie.getScoreJoueur1().isAvantage());
+    }
+
+    @Test
+    @DisplayName("Quand un gagnant a 40 points, et son oposant a 40 pts et un avantage, alors l'opposant perd son avantage")
+    public void testGagneUnPointNouveauPerdAvantage(){
+        partie.getScoreJoueur1().setScore(40, 0, 0, 0);
+        partie.getScoreJoueur2().setScore(40, 0, 0, 0);
+        partie.getScoreJoueur2().setAvantage(true);
+        compteur.joueurGagne(partie, joueur1);
+        assertFalse(partie.getScoreJoueur2().isAvantage());
+    }
+
+    @Test
+    @DisplayName("Quand un gagnant a 40 points et un avantage et son oposant a 40 pts alors il gagne le jeux")
+    public void testGagneUnPointGagneJeux(){
+        partie.getScoreJoueur1().setScore(40, 0, 0, 0);
+        partie.getScoreJoueur2().setScore(40, 0, 0, 0);
+        partie.getScoreJoueur1().setAvantage(true);
+        compteur.joueurGagne(partie, joueur1);
+        assertEquals(1, partie.getScoreJoueur1().getJeux());
+    }
+
+
+
 
 
 

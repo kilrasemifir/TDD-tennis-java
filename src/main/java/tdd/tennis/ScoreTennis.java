@@ -10,6 +10,7 @@ public class ScoreTennis {
 	private int jeux;
 	private int set;
 	private int match;
+	private boolean avantage;
 
 	public int getJeux() {
 		return jeux;
@@ -36,5 +37,17 @@ public class ScoreTennis {
 		this.jeux = jeux;
 		this.set = set;
 		this.match = match;
+	}
+
+	public boolean isAvantage() {
+		return avantage;
+	}
+
+	public void setAvantage(boolean avantage) {
+		this.avantage = avantage;
+	}
+
+	public void setJeux(int jeux) {
+		this.jeux = jeux;
 	}
 }
