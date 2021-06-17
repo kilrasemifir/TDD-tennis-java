@@ -7,7 +7,7 @@ package tdd.tennis;
 public class CompteurPartieTennis {
 
 	/**
-	 * Cette Methode permet de créer une nouvelle partie de tennis.
+	 * Cette Methode permet de crï¿½er une nouvelle partie de tennis.
 	 * Une partie contient 2 joueurs et 2 Scores
 	 * Au debut de la partie, les score sont a 0.
 	 * @param joueur1 premier joueur de la partie

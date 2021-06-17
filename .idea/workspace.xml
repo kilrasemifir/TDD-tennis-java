@@ -29,7 +29,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4775212c-32ed-4229-a1b5-9c94c2fbf411" name="Default Changelist" comment="" />
+    <list default="true" id="4775212c-32ed-4229-a1b5-9c94c2fbf411" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/features/creationPartie.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/features/creationPartie.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/features/gagneLePoint.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/features/gagneLePoint.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/tennis/CompteurPartieTennis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/tennis/CompteurPartieTennis.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +43,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -64,6 +77,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -100,5 +117,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="376" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623932253156">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="376" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1623932253156" />
+    <state x="412" y="135" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1623932254557">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="135" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1623932254557" />
+    <state x="384" y="262" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1623931929410">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="384" y="262" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1623931929410" />
   </component>
 </project>
