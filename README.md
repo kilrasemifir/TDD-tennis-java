@@ -92,3 +92,6 @@ Dans Eclipse: Help > Eclipse Market puis dans la bar de recherche tapez: "EclEmm
 
 Pour lancer le coverage: click droit sur le projet
 Coverage As > JUnit Test.
+
+### Pour utiliser Cucumber:
+Pour l'utilisation de cucumber, il est necessaire d'ajouter le plugin Cucumber pour eclipse (via Eclipse Market).
