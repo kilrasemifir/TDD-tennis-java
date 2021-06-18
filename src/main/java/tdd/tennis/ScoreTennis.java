@@ -9,7 +9,6 @@ public class ScoreTennis {
 	private int point;
 	private int jeux;
 	private int set;
-	private int match;
 	private boolean avantage;
 
 	public int getJeux() {
@@ -19,11 +18,11 @@ public class ScoreTennis {
 	public int getSet() {
 		return set;
 	}
-
-	public int getMatch() {
-		return match;
+	
+	public void setSet(int set) {
+		this.set = set;
 	}
-
+	
 	public int getPoint() {
 		return point;
 	}
@@ -31,14 +30,7 @@ public class ScoreTennis {
 	public void setPoint(int point) {
 		this.point = point;
 	}
-
-	public void setScore(int point, int jeux, int set, int match){
-		this.point = point;
-		this.jeux = jeux;
-		this.set = set;
-		this.match = match;
-	}
-
+	
 	public boolean isAvantage() {
 		return avantage;
 	}
