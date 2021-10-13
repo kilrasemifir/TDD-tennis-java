@@ -15,14 +15,7 @@ public class CompteurPartieTennis {
      * @return une nouvelle partie.
      */
     public PartieDeTennis nouvellePartie(JoueurDeTennis joueur1, JoueurDeTennis joueur2) {
-
-        if(joueur1 == joueur2){
-            throw new RuntimeException("Les joueurs doivent etre differents!");
-        }
-        if (joueur1==null || joueur2==null){
-            throw new RuntimeException("Les joueurs ne doivent pas etre nulls");
-        }
-        return new PartieDeTennis(joueur1, joueur2);
+        return null;
     }
 
     /**
@@ -32,43 +25,7 @@ public class CompteurPartieTennis {
      * @return La partie avec les nouveaux scores.
      */
     public PartieDeTennis joueurGagne(PartieDeTennis partie, JoueurDeTennis gagnant) {
-        ScoreTennis scoreDuGagnant = trouverScoreGagnant(partie, gagnant);
-        ScoreTennis scoreDuPerdant = getScoreDuPerdant(partie, scoreDuGagnant);
-        managePoint(scoreDuGagnant, scoreDuPerdant);
-        return partie;
-    }
 
-    private ScoreTennis getScoreDuPerdant(PartieDeTennis partie, ScoreTennis scoreDuGagnant) {
-        return scoreDuGagnant == partie.getScoreJoueur1() ? partie.getScoreJoueur2() : partie.getScoreJoueur1();
-    }
-
-    private ScoreTennis trouverScoreGagnant(PartieDeTennis partie, JoueurDeTennis gagnant) {
-        ScoreTennis scoreDuGagnant;
-        if (gagnant == partie.getJoueur1())
-            scoreDuGagnant = partie.getScoreJoueur1();
-        else
-            scoreDuGagnant = partie.getScoreJoueur2();
-        return scoreDuGagnant;
-    }
-
-    private void managePoint(ScoreTennis scoreDuGagnant, ScoreTennis scoreDuPerdant) {
-        if(scoreDuGagnant.getPoint()==0){
-            scoreDuGagnant.setPoint(15);
-        }else if(scoreDuGagnant.getPoint()==15){
-            scoreDuGagnant.setPoint(30);
-        } else if(scoreDuGagnant.getPoint()==30) {
-            scoreDuGagnant.setPoint(40);
-        } else {
-            gestionAvantage(scoreDuGagnant, scoreDuPerdant);
-        }
-    }
-
-    private void gestionAvantage(ScoreTennis scoreDuGagnant, ScoreTennis scoreDuPerdant) {
-        if(scoreDuPerdant.isAvantage())
-            scoreDuPerdant.setAvantage(false);
-        else if(scoreDuGagnant.isAvantage())
-            scoreDuGagnant.setJeux(scoreDuGagnant.getJeux()+1);
-        else
-            scoreDuGagnant.setAvantage(true);
+        return null;
     }
 }
